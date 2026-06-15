@@ -1,16 +1,32 @@
 import { type ReactNode } from "react";
+import logoDark from "@/assets/soleste/logo-dark.png";
+import logoLight from "@/assets/soleste/logo-light.png";
 
-export function Wordmark({ className = "" }: { className?: string }) {
+export function Logo({
+  variant = "dark",
+  className = "",
+}: {
+  variant?: "dark" | "light";
+  className?: string;
+}) {
+  const src = variant === "light" ? logoLight : logoDark;
   return (
-    <span
-      className={`font-display text-2xl tracking-tight text-chocolate ${className}`}
-      style={{ fontFamily: "var(--font-display)" }}
-    >
-      Sol<span className="italic">é</span>ste
-      <span className="ml-1 text-gold">·</span>
-      <span className="ml-1 text-[0.65em] uppercase tracking-[0.32em] text-mute">Cakes</span>
-    </span>
+    <img
+      src={src}
+      alt="Soléste Cakes Logo"
+      className={`h-16 w-auto object-contain transition-all duration-300 ${className}`}
+    />
   );
+}
+
+export function Wordmark({
+  className = "",
+  variant = "dark",
+}: {
+  className?: string;
+  variant?: "dark" | "light";
+}) {
+  return <Logo variant={variant} className={className} />;
 }
 
 export function GoldDivider({ className = "" }: { className?: string }) {

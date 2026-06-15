@@ -34,7 +34,7 @@ export function Navbar() {
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 lg:grid-cols-[auto_1fr_auto] lg:px-8">
         <a href="#top" className="min-w-0 shrink-0">
-          <Wordmark />
+          <Wordmark className="h-12 sm:h-14" />
         </a>
 
         <nav className="hidden lg:flex justify-center gap-8">
@@ -72,7 +72,7 @@ export function Navbar() {
       {open && (
         <div className="fixed inset-0 z-[60] bg-ivory lg:hidden">
           <div className="flex items-center justify-between border-b border-borderSoft px-5 py-4">
-            <Wordmark />
+            <Wordmark className="h-12" />
             <button aria-label="Close menu" onClick={() => setOpen(false)} className="p-2 text-chocolate">
               <X className="h-5 w-5" />
             </button>

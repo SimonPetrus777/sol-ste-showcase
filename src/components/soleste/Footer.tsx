@@ -10,7 +10,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div>
-            <Wordmark className="text-ivory" />
+            <Wordmark variant="light" className="h-20" />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-ivory/65">
               Premium cakes, custom creations, and elegant hampers crafted for
               meaningful celebrations.
