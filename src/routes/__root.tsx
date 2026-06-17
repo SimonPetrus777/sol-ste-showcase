@@ -81,6 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Soléste Cakes" },
       { name: "twitter:card", content: "summary_large_image" },
+      { title: "Lovable App" },
+      { property: "og:title", content: "Lovable App" },
+      { name: "twitter:title", content: "Lovable App" },
+      { name: "description", content: "Soléste Cakes offers elegant, premium cakes and artisanal baked goods for special celebrations." },
+      { property: "og:description", content: "Soléste Cakes offers elegant, premium cakes and artisanal baked goods for special celebrations." },
+      { name: "twitter:description", content: "Soléste Cakes offers elegant, premium cakes and artisanal baked goods for special celebrations." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1b6712ce-0037-451e-9854-c0bbce22fae5/id-preview-a9c8cf2e--2f8b903b-33f4-450b-81c6-3e06fa9cc565.lovable.app-1781533704973.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1b6712ce-0037-451e-9854-c0bbce22fae5/id-preview-a9c8cf2e--2f8b903b-33f4-450b-81c6-3e06fa9cc565.lovable.app-1781533704973.png" },
     ],
     links: [
       {
